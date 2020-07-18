@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.CancionActivity">
+
+    <ImageView
+        android:id="@+id/albumIV"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/nomCancionTV"
+        android:layout_width="342dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="32dp"
+        android:text="Nombre "
+        android:textAlignment="center"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/albumIV" />
+
+    <TextView
+        android:id="@+id/NomArtistaTV"
+        android:layout_width="257dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="15dp"
+        android:text="Artista"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nomCancionTV" />
+
+    <TextView
+        android:id="@+id/NomAlbumTV"
+        android:layout_width="318dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:text="Álbum: "
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NomArtistaTV" />
+
+    <TextView
+        android:id="@+id/DuracionTV"
+        android:layout_width="wrap_content"
+        android:layout_height="27dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="28dp"
+        android:text="Duracion de la canción: "
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NomAlbumTV" />
+
+    <TextView
+        android:id="@+id/DuracionCancTV"
+        android:layout_width="wrap_content"
+        android:layout_height="27dp"
+        android:layout_marginTop="28dp"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/DuracionTV"
+        app:layout_constraintTop_toBottomOf="@+id/NomAlbumTV" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="323dp"
+        android:layout_height="3dp"
+        android:layout_marginTop="20dp"
+        android:background="#3E3D3D"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DuracionTV" />
+
+    <Button
+        android:id="@+id/EscucharBT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:background="#807E7E"
+        android:text="Escuchar"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
